@@ -16,13 +16,3 @@ def read_root(request: Request):
 if __name__ == "__main__":
     uvicorn.run("main:app", reload=True, log_level='info')
 
-
-"""
-
-assets                                                                                                        
-templates                                                                                                     
-venv                                                                                                          
-.gitignore                                                                                                    
-main.py     
-
-"""
