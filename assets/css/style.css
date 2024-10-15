@@ -2062,3 +2062,183 @@ textarea.form-input::-webkit-resizer {
     margin: 0;
     font-size: 18px; /* Adjust the text size */
 }
+
+
+.skill_skill__oFitQ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: start;
+    padding: 7px 18px;
+    border: 2px solid var(--skills_stroke, #0f172a);
+    background: var(--skills_gradient_bg, linear-gradient(261deg, #1f2739 5.73%, rgba(23, 38, 71, .98) 93.52%));
+    color: var(--skills_text_color, #56b6d4);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: initial;
+    border-radius: 5px;
+    outline: 2px solid var(--primary_light_icon);
+    outline-offset: 0;
+    letter-spacing: 1.2px
+}
+
+.skill_skill__oFitQ:hover {
+    background: var(--Title-Gradient);
+    color: var(--white)
+}
+
+@media screen and (max-width: 500px) {
+    .skill_skill__oFitQ {
+        font-size: 13px;
+        gap: 5px;
+        padding: 5px 10px
+    }
+}
+
+.skill_skill__oFitQ img {
+    width: min-content
+}
+
+.Skills_skillHead__T6_DJ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 150px
+}
+
+.Skills_mySkills__Na9XU {
+    border-radius: 6px;
+    border: 4px solid var(--black_border, #292929);
+    background: var(--black, #000);
+    display: inline-block;
+    padding: 20px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark_light);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10
+}
+
+.Skills_skills__rCqVE {
+    display: flex;
+    flex-direction: column;
+    gap: 80px
+}
+
+.Skills_svgEffect__8NJfh {
+    position: absolute;
+    top: 70px
+}
+
+.Skills_svgEffect__8NJfh, .Skills_svgEffect__8NJfh svg {
+    width: 100%;
+    pointer-events: none
+}
+
+@media screen and (max-width: 999px) {
+    .Skills_mySkills__Na9XU {
+        font-size: 20px;
+        padding: 15px 40px
+    }
+
+    .Skills_svgEffect__8NJfh {
+        top: 0
+    }
+
+    .Skills_skills__rCqVE .Skills_full_stack__KiQFa {
+        gap: 40px
+    }
+
+    .Skills_svgEffect__8NJfh {
+        top: -40px
+    }
+}
+
+.Skills_full_stack__KiQFa {
+    display: grid;
+    grid-gap: 100px;
+    gap: 100px;
+    grid-template-columns:1fr 1fr
+}
+
+.Skills_additional__0WdkS, .Skills_backend__IuTAc, .Skills_design__MYabM, .Skills_frontend__xWEWg, .Skills_lang__M0RLw {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px 15px;
+    flex-shrink: 0;
+    flex-wrap: wrap
+}
+
+.Skills_others__ovqrN {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+
+/*.titles {*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    font-size: 16px;*/
+/*    color: #fff;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    width: 0;*/
+/*    animation: typing 3s steps(30, end) 1s infinite, clear 0s steps(30, end) 4s infinite;*/
+/*}*/
+
+/*@keyframes typing {*/
+/*    from {*/
+/*        width: 0;*/
+/*    }*/
+/*    to {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@keyframes clear {*/
+/*    from {*/
+/*        width: 100%;*/
+/*    }*/
+/*    to {*/
+/*        width: 0;*/
+/*    }*/
+/*}*/
+
+/* Yuklanish ekrani */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #282828; /* Orqa fon rangi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Spinner (aylanadigan animatsiya) */
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
